@@ -22,9 +22,9 @@ function opencart()
 
 async function getData()
 {
-    let response=await fetch("http://localhost:3000/products");
+    let response=await fetch("https://my-json-server.typicode.com/abeerzahran/ShopifyStore/db");
     let data=await response.json();
-    await cartproducts(data);
+    await cartproducts(data.products);
 }
 
 async function cartproducts(data)

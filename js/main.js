@@ -58,21 +58,23 @@ else{
 
 async function getData()
 {
-    let response=await fetch("http://localhost:3000/products");
+    let response=await fetch("https://my-json-server.typicode.com/abeerzahran/ShopifyStore/db");
     let data=await response.json();
+    await console.log(data);
     await buildcards(data);
+    
 }
 
 let categories=document.getElementsByClassName("categories")[0];
 async function buildcards(data)
 {
-    Date=data;
+    Data=data.products;
     var products=document.getElementsByClassName("products")[0];
     var Card=document.getElementsByClassName("cardcol")[0].cloneNode(true);
     Card.classList.remove("visually-hidden");
     document.getElementsByClassName("cardcol")[0].remove();
     
-    data.forEach((element) => {
+    Data.forEach((element) => {
         
         let cardcol=Card.cloneNode(true);
         cardcol.classList.add(`${element.category}`,"mb-5","ms-3","ms-sm-0","col-9","col-sm-5", "col-md-3","flex-row","justify-content-center","justify-self-center");
