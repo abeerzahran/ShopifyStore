@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@media screen and (max-width:2000px) {
+    .slideImg
+    {
+        height: 600px
+    }
+    .category span
+    {
+        font-size: 30px;
+    }
+    .arrows
+    {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .nav-menu
+    {
+        display: none;
+    }
+    .slideImg
+    {
+        height: 400px
+    }
+    .nav
+    {
+        height: 70px;
+    }
+    .category span
+    {
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .slideImg
+    {
+        height:300px
+    }
+    .category span
+    {
+        font-size: 15px;
+    }
+    .contactdiv
+    {
+        width: 75%;
+        
+    }
+    
+}
+@media screen and (max-width:300px) {
+    .slideImg
+    {
+        height:200px
+    }
+    
+    .category span
+    {
+        font-size: 12px;
+    }
+    .productName
+    {
+        font-size: 15px;
+    }
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+/* .wrapper svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+.wrapper svg text {
+	animation: stroke 4s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 97px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgb(20, 38, 66);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(20, 38, 66,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(20, 38, 66,1); stroke-width: 3; }
+	100% {
+		fill: rgb(69, 132, 196); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+} */
+.sliderCaption {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+/* .wrapper {background-color: #FFFFFF}; */
+
+.nav
+{
+    z-index: 2;
+}
+.row
+{
+    max-width: 100%;
+}
+img
+{
+    object-fit: cover;
+    
+    object-position: center;
+}
+.slider img{
+    filter: brightness(60%);
+}
+.logo span
+{
+    font-family:Courgette ;
+}
+a
+{
+    text-decoration: none;
+    font-family: Montserrat ;
+}
+.sidebar
+{
+    z-index: 1000;
+    position: absolute;
+    width: max-content;
+    height: 100vh;
+    width: 280px;
+}
+.showSidebar
+{
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    transition-duration: .2s;
+}
+.hideSidebar
+{
+
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    transition-duration: .2s;
+}
+.fa-cart-shopping
+{
+    height: 30px;
+    width: 35px;
+    
+}
+.cartNum
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bolder;
+    background-color: rgb(182, 189, 202);
+}
+
+.arrows
+{
+    width: 5%;
+    height: 10%;
+    opacity: .3;
+}
+.arrows:hover
+{
+    opacity: 1;
+}
+.shop
+{
+    font-family:Montserrat ;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(34,54,89);
+}
+.types
+{
+    background-color: rgb(176, 180, 233);
+}
+.category img
+{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    aspect-ratio: 1/1;
+}
+.category span
+{
+    text-align: center;
+
+}
+.cardcol
+{
+    display: flex;
+}
+.card
+{
+    overflow: hidden;
+    border-radius: 10%;
+}
+.card-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-img:hover
+{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.img_div
+{
+    overflow: hidden;
+}
+.cartadd
+{
+    width: auto;
+    height: auto;
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    color: black;
+    background-color: rgb(182, 175, 189);
+    display: flex;
+    z-index: 1;
+}
+.incart
+{
+    display: none;
+    z-index: 1;
+}
+.cartadd:hover
+{
+    background-color: rgb(69, 71, 94);
+    color:aliceblue
+}
+p
+{
+    font-family:Montserrat ;
+}
+.product-details
+{
+    padding-top: 100px;
+}
+.cart
+{
+    padding-top: 100px;
+    text-align: center;
+    font: 60px Courgette;
+}
+
+.checkout
+{
+    background-color: rgba(71, 172, 25, 0.733);
+    color: aliceblue;
+}
+.checkout:hover
+{
+    background-color: rgb(147, 199, 147);
+    color: black;
+}
+
+.signin
+{
+    z-index: 3;
+    margin: auto;
+    display: none;
+    background-color: rgba(146, 188, 216, 0.952);
+}
+.signup
+{
+    z-index: 4;
+    margin: auto;
+    display: none;
+    background-color: rgba(146, 188, 216, 0.952);
+
+}
+.invalid ,.exist,.invalidName,.successcheck,.contactEmail,.contactName
+{
+    display: none;
+}
+
+.scrollUp
+{
+    z-index: 3;
+}
+.about
+{
+    padding-top: 100px;
+}
+.contact 
+{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: url(/images/store3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.social
+{
+    display: flex;
+    flex-direction: row;
+}
+.send
+{
+    background-color: rgb(52, 73, 117);
+    color: aliceblue;
+    border: 0;
+}
+.send:hover
+{
+    background-color: rgb(67, 143, 187);
+    color: black;
+}
