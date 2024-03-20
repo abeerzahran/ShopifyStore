@@ -219,7 +219,7 @@ a
     height: 100%;
     object-fit: cover;
 }
-.card-img:hover
+.card-img:hover,.category img:hover
 {
     transform: scale(1.1);
     transition-duration: 1s;
