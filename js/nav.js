@@ -21,7 +21,7 @@ var exist=document.getElementsByClassName("exist")[0];
 var pass2= document.getElementsByClassName("password")[1];
 var regex=/^[a-zA-Z]+[a-zA-Z0-9]*@[a-zA-Z]+\.com$/;
 /////////////////////////////////////////////////////////
-username.innerHTML=localStorage.name;
+username.innerHTML=localStorage.Name;
 
 function showSidebar()
 {
@@ -118,7 +118,7 @@ window.addEventListener("scroll",()=>{
 
 function signin()
 {
-    console.log("aAAA");
+    
     
     if((!(regex.test(email.value)&& localStorage.getItem(email.value))))
     {
@@ -136,7 +136,7 @@ function signin()
             signIn.style.display="none";
             invalid.style.display="none";
             username.innerHTML=localStorage.getItem(email.value+'name');
-            localStorage.name=localStorage.getItem(email.value+'name');
+            localStorage.Name=localStorage.getItem(email.value+'name');
             localStorage.signed=true;
             email.value="";
             pass.value='';
@@ -173,18 +173,13 @@ function signup()
     else if(email2.value==''||pass2.value=='')
     {
         invalid2.style.display="flex";
-        console.log("invalid2");
-        console.log(email2.value);
-        console.log(namee.value);
-        console.log(pass2.value);
-
     }
     else
     {
         
         localStorage.setItem(email2.value,pass2.value);
         localStorage.setItem(email2.value+'name',namee.value);
-        localStorage.setItem("Name",namee);
+        localStorage.setItem("Name",namee.value);
         username.innerHTML=localStorage.getItem(email2.value+'name');
         signIn.style.display="none";
         signUp.style.display="none";
