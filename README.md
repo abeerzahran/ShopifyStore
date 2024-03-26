@@ -24,8 +24,8 @@ Welcome to the Shopify Store! This project showcases my skills in frontend devel
 ## Getting Started
 
 To get started with this project, follow these steps:
-1. Clone the repository: git clone [repository URL]
-2. Navigate to the project directory: cd [project directory]
+1. Clone the repository: git clone https://github.com/abeerzahran/ShopifyStore.git.
+2. Navigate to the project directory: cd ShopifyStore
 3. Open the project in your preferred code editor.
 
 ## Usage
